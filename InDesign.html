@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Project created in Adobe InDesign.">
+  		<meta name="keywords" content="InDesign, business card, envelope, letterhead, Magazine, brochure">
+        <meta name="author" content="Abigail C. Jones">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PROJECT 4 - INDESIGN</title>
+        <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="style.css">
+
+        <style>
+            .mySlides {display:none;}
+        </style>
+
+	</head>
+	<body>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li style="float:left"><a class="name" href="index.html">Abigail C. Jones</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="3DART.html">3D Art</a></li>
+            <li><a href="2DART.html">2D Art</a></li>
+            <li><a href="Photography.html">Photography</a></li>
+            <li><div class="dropdown">
+                <button class="dropbtn">Digital Works</button>
+                <div class="dropdown-content">
+                <a href="Illustrator.html">Illustrator</a>
+                <a class="active">Indesign</a>
+                <a href="Miscellaneous.html">Miscellaneous</a>
+                </div>
+            </div>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>	
+    </nav>
+
+		<header>
+            <br>
+			<h1>InDesign</h1>
+		</header>
+
+        <div class="edge">
+        <div class="flex-container">
+            <div> 
+                <img src="Business_Card.jpg" alt="Blue and gold business card for a court reporter." style="width:100%">
+                <p><b>FREEELANCE COURT REPORTING BUSINESS CARD</b><br>2022</p>
+             </div>
+            <div> 
+                <img src="envelope.png" alt="Blue and gold envelope for a court reporter." style="width:100%">
+                <p><b>FREEELANCE COURT REPORTING ENVELOPE</b><br>2022</p>   
+            </div>
+            <div> 
+                <img src="letterhead.jpg" alt="Blue and gold letterhead for a court reporter." style="width:100%">
+                <p><b>FREEELANCE COURT REPORTING LETTERHEAD</b><br>2022</p>       
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="container">
+                <div class="content display-container">
+
+                    <p><b>COURT REPORTING MAGAZINE</b><br>2023</p>
+                
+                    <img class="JCR" src="MagCRCover.jpg" alt="Cover of JCR Magazine." style="width:100%">
+                    <img class="JCR" src="MagCRPage2.jpg" alt="Page 2 of JCR Magazine, table of contents." style="width:100%">
+                    <img class="JCR" src="MagCRPage3.jpg" alt="Page 3 of JCR Magazine, Stenocat adversitement." style="width:100%">
+                    <img class="JCR" src="MagCRPage4.jpg" alt="Page 4 of JCR Magazine, scopist article." style="width:100%">
+                    <img class="JCR" src="MagCRPage5.jpg" alt="Page 5 of JCR Magazine, A to Z article." style="width:100%">
+                    <img class="JCR" src="MagCRPage6.jpg" alt="Page 6 of JCR Magazine, May article." style="width:100%">
+                    <img class="JCR" src="MagCRPage7.jpg" alt="Page 7 of JCR Magazine, Relience adversitement." style="width:100%">
+                    <img class="JCR" src="MagCRPage8.jpg" alt="Page 8 of JCR Magazine, Orlando article." style="width:100%">
+                    <img class="JCR" src="MagCRPage9.jpg" alt="Page 9 of JCR Magazine, Last Laugh article." style="width:100%">
+                    <img class="JCR" src="MagCRPage11form.jpg" alt="Page 10 of JCR Magazine, Contact form." style="width:100%">
+                    
+                    <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+                        
+                        function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                        }
+                        
+                        function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("JCR");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="content display-container">
+
+                    <p><b>EASEL ART MAGAZINE</b><br>2023</p>
+
+                    <img class="easel" src="MagEaselCover.jpg" alt="Cover of Easel Magazine." style="width:100%">
+                    <img class="easel" src="MagEaselPage2.png" alt="Page 2 of Easel Magazine, Movement Article part 1." style="width:100%">
+                    <img class="easel" src="MagEaselPage3.png" alt="Page 2 of Easel Magazine, Movement Article part 2." style="width:100%">
+                    
+                    <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+                        
+                        function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                        }
+                        
+                        function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("easel");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
+                </div>
+            </div>
+
+                <div class="container">
+                    <div class="content display-container">
+
+                        <p><b>WEDDING BROCHURE</b><br>2023</p>  
+                    
+                        <img class="brochure" src="brochure_p1.png" alt="Cover of Wedding brochure, image of couple" style="width:100%">
+                        <img class="brochure" src="brochure_p2.png" alt="Page 2 of Wedding brochure, schedule." style="width:100%">
+                        <img class="brochure" src="brochure_p3.png" alt="Page 3 of Wedding brochure, wedding party." style="width:100%">
+                        <img class="brochure" src="brochure_p4.png" alt="Page 4 of Wedding brochure, acknowledgments." style="width:100%">
+                        
+                        <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+                    
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+                            
+                            function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                            }
+                            
+                            function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("brochure");
+                            if (n > x.length) {slideIndex = 1}
+                            if (n < 1) {slideIndex = x.length}
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";  
+                            }
+                            x[slideIndex-1].style.display = "block";  
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        <footer>
+            <div class="footer">
+                <div>
+                    <h4>DOWNLOAD</h4>
+                    <a href="Resume.pdf">Resume</a>
+
+                    <h4>COMPANY</h4>
+                    <a href="Privacy.html">Privacy Policy</a>
+                </div>
+                <div>
+                    <h4>CONTACT</h4>
+                    <p>gailrose2020@gmail.com
+                    <br>(304) 000-0000
+                    <br>10000 Violet Drive
+                    <br>Hagerstown MD, 21795
+                    <br>salviasketches.com</p>
+                </div>
+                <div>
+                    <h4>SERVICES</h4>
+                    <p>Web Design
+                    <br>Magazine Design
+                    <br>Photography
+                    <br>Posters
+                    <br>Logos</p>
+                </div>
+                <div>
+                    <h4>GET IN TOUCH</h4>
+                    <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook logo" style="width:20px"></a>
+                    <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram logo" style="width:20px"></a>
+                    <a href="https://www.youtube.com"><img src="YouTube.png" alt="YouTube logo" style="width:20px"></a>
+                    <a href="https://www.youtube.com"><img src="pinterest.png" alt="Pinterest logo" style="width:20px"></a>
+
+                    <p id="demo">
+                        <script>
+                        const d = new Date();
+                        document.getElementById("demo").innerHTML = d;
+                        </script>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+	</body>
+</html>
